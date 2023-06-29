@@ -244,3 +244,25 @@ Een API-eis wordt opgelegd aan één rol. Hierop zijn twee uitzonderingen:
   deployer-rollen samen worden aangesproken.
 - Wanneer een eis de afhankelijkheid betreft tussen verschillende verschijningsvormen van API's (bijvoorbeeld tussen
   API-implementatie en API deployment) kunnen bijbehorende rollen samen worden aangesproken.
+
+## Principes en uitgangspunten
+
+Voor de uitwerking van de API-strategie gelden principes en uitgangspunten (zie tabel 1).
+
+|   | Aspect of kenmerk                | Principe                                                                                                                                                                                                                                                               | Zie                                                                                         |
+|---|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| 1 | rolvastheid in het stelsel       | Een API-specificatie laat kenmerken die niet bij die API horen (op grond van afbeelding 1) over aan toepasselijke andere elementen van het zorginformatiestelsel. Dit gebeurt ook als de API afhankelijk is van deze elementen en ook als die elementen nog ontbreken. | [paragraaf 1.1](./een-api-strategie-voor-de-zorg.md#strategisch-aandacht-voor-apis)         |
+| 2 | scheiding van logica             | De technische API-specificaties zijn gescheiden van de logische (gegevens- en transactie)modellen die zij implementeren (afbeelding 1).                                                                                                                                | [paragraaf 1.1](./een-api-strategie-voor-de-zorg.md#strategisch-aandacht-voor-apis)         |
+| 3 | kwaliteitsniveaus                | De API-strategie hanteert drie niveaus (treden) voor de mate waarin een API voldoet aan een set API-eisen (afbeelding 2).                                                                                                                                              | [paragraaf 1.2](./een-api-strategie-voor-de-zorg.md#doel-en-groeipad-van-een-api-strategie) |
+| 4 | implementatie-onafhankelijkheid  | Een API-specificatie is op het hoogste kwaliteitsniveau onafhankelijk van specifieke API-implementaties (software).                                                                                                                                                    | [paragraaf 1.1](./een-api-strategie-voor-de-zorg.md#strategisch-aandacht-voor-apis)         |
+| 5 | scheiding van infrastructuur[^8] | Een API is gescheiden van de infrastructuur waarover de API wordt afgehandeld (afbeelding 1).                                                                                                                                                                          | [paragraaf 2.4](#infrastructuur)                                                            |
+| 6 | eisen en rollen                  | Elke API-eis hoort bij voorkeur bij één rol of bij zo min mogelijk rollen uit het rollenmodel (afbeelding 4).                                                                                                                                                          | [paragraaf 2.5](#rollen)                                                                    |
+| 7 | autorisatiebeleid                | Elke API deployment functioneert onder een autorisatiebeleid (restricted use API's).                                                                                                                                                                                   | [paragraaf 2.2](#typologieën-van-apis)                                                      |
+| 8 | paradigma-afhankelijkheid        | Een API-eis kan passen bij één of meer API-paradigma's.                                                                                                                                                                                                                | [paragraaf 2.3](#api-paradigmas-en-technologiestandaarden)                                  |
+
+*Tabel 1: Principes voor de API-strategie voor de zorg.*
+
+[^8]:
+    Deze term is in het veld onderhavig aan aanzienlijke vervaging. Hier wordt met deze term niet geappelleerd aan
+    pretenties van brede toepassing of monopolisering van functionaliteit, maar aan het resultaat van het wegfilteren
+    van applicatie-afhankelijkheid uit functionaliteit.
