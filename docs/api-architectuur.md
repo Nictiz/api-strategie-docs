@@ -232,7 +232,8 @@ tweezijdige relatie staat voor wederzijds respect voor elkaars verantwoordelijkh
 Verticale relaties weerspiegelen de gelaagdheid van het zorginformatiestelsel:
 conceptueel-logisch-applicatie-infrastructuur. Horizontaal onderscheidt het model de gebruikende kant (links) van de
 aanbiedende kant (rechts), met per kant een gedragskolom met erachter een productkolom. In het midden een
-bemiddelende kolom. De verantwoordelijkheden van deze rollen staan beschreven in Bijlage C.
+bemiddelende kolom. De verantwoordelijkheden van deze rollen staan beschreven in
+[Bijlage C](./beschrijving-van-de-api-rollen.md).
 
 De API-strategie kent enkele meta-rollen met verantwoordelijkheden voor de API-strategie zelf: verantwoordelijkheid voor
 administratie van API's in een bibliotheek, verantwoordelijkheid voor het opstellen van de API-eisen en
