@@ -3,7 +3,7 @@
 Met zijn vijf niveaus roept het model in afbeelding 1 de vraag op hoe het zich verhoudt tot het bekende lagenmodel van
 [Nictiz](https://nictiz.nl/wat-we-doen/zorginformatiestelsel/interoperabiliteit/). Met dat model bestaan vergaande
 overeenkomsten en geen tegenstrijdigheden. Afbeelding 1 is op meer manieren een wezenlijke verfijning van het Nictiz
-lagen-model.
+lagenmodel.
 
 ![Lagenmodel van Nictiz.](./assets/images/lagenmodel-van-nictiz.png)
 
