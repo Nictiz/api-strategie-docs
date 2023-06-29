@@ -95,7 +95,11 @@ wetsvoorstel Wegiz (Wet Elektronische gegevensuitwisseling in de zorg).
 
 ### Doel
 
-Databeschikbaarheid vraagt om meer dan alleen data technisch bevrijden uit systemen. Dan komt de data namelijk alleen in ruwe technische vorm beschikbaar, zonder dat duidelijk is of en hoe die data bruikbaar is buiten het systeem. Daarom moet een API-strategie niet alleen streven naar inzet van meer API's, maar ook naar inzet van goede API's: API's die data (en transacties) zo beschikbaar stellen dat zij bruikbaar zijn in expliciete zorginformatiebehoeften. Een API-strategie moet die bruikbaarheid dus definiëren en bevorderen.
+Databeschikbaarheid vraagt om meer dan alleen data technisch bevrijden uit systemen. Dan komt de data namelijk alleen in
+ruwe technische vorm beschikbaar, zonder dat duidelijk is of en hoe die data bruikbaar is buiten het systeem. Daarom
+moet een API-strategie niet alleen streven naar inzet van meer API's, maar ook naar inzet van goede API's: API's die
+data (en transacties) zo beschikbaar stellen dat zij bruikbaar zijn in expliciete zorginformatiebehoeften. Een
+API-strategie moet die bruikbaarheid dus definiëren en bevorderen.
 
 > Het doel van de API-strategie is: inzet van meer goede API's.
 
@@ -110,7 +114,7 @@ standaarden.
 Toch beperkt een API-strategie zich er niet toe eenvoudigweg te stellen dat API's moeten passen in afspraken op hogere
 niveaus. Daarmee zouden kansen worden gemist op welkome en passende technologie-gedreven innovatie
 ([paragraaf 1.1](#strategisch-aandacht-voor-apis)). Bovendien zou dat de mogelijkheid ontnemen om actief strategie te
-voeren op de groei van de kwaliteit van API's.
+voeren op de *groei* van de kwaliteit van API's.
 
 Daarom hanteert de API-strategie een groeipad voor API's langs drie treden. Op de eerste trede stelt de API-strategie
 eisen aan de documentatie van de API-specificatie, als minimale kwaliteit om op voort te bouwen. Zonder geschikte
@@ -136,3 +140,80 @@ API-strategie wel van hun werk afhankelijk.
 Een volledig gestandaardiseerde API (op de derde trede) geniet die status alleen voor de inhoudelijke
 informatiestandaard waarop de API is beoordeeld. Zo kan het voorkomen dan een API vaker voorkomt op trede drie namelijk
 voor verschillende informatiestandaarden (waarvoor de API geschikt is bevonden).
+
+## API-speelveld en krachten
+
+### API specifiers en API developers
+
+Een effectieve API-strategie houdt rekening met diverse rollen van partijen op het API-speelveld. Zo zijn er de *API
+specifiers* die de API-specificatie schrijven. De *API developers* zijn de partijen die de software leveren waarin die
+API's zijn ingebouwd.
+
+Als een softwareleverancier specificeert welke API's zijn software biedt, dan vervult deze leverancier beide rollen. Het
+kan ook voorkomen dat een standaardisatie-organisatie een API standaardiseert (als API specifier), waarna meer
+softwareleveranciers die API inbouwen in hun software (als API developers).
+
+Bij de dagelijkse inzet van de API's is er een aanbiedend systeem (de server) en een afnemend systeem (de client). Beide
+zijden moeten eerst geïmplementeerd zijn. Daarom worden de *API server developer* en de *API client developer* als
+aparte rollen onderscheiden. Bevinden server en client zich binnen eenzelfde (informatie)systeem, dan vervult een API
+developer beide rollen.
+
+### API server deployers en API client deployers
+
+Degene die verantwoordelijk is voor de dagelijkse inzet van een API is de *API deployer*. Een softwareleverancier
+bijvoorbeeld is als API developer niet verantwoordelijk voor de dagelijkse inzet van de API's uit zijn software. Een
+gebruikersorganisatie als klant van een softwareleverancier kan deze rol vervullen. Steeds vaker echter draagt een derde
+partij deze verantwoordelijkheid, als dienstverlener aan de gebruikersorganisatie.
+
+Ook hier is sprake van een aanbiedend (server) en een afnemend systeem (client). Daarom bestaat er een rol die
+verantwoordelijk is voor de dagelijkse inzet van de API's aan de server-kant en een rol die verantwoordelijk is voor de
+inzet van de API's aan de client-kant: de *API server deployer* en *API client deployer*. Betreft het API's binnen
+eenzelfde systeem, zullen de API server deployer en de API client deployer dezelfde partij zijn.
+
+### API agreement holder
+
+Tot slot moeten de twee uitwisselende partijen (de API server deployer en de API client deployer) een API-overeenkomst
+aangaan om elkaar te kunnen vertrouwen. Als de API server deployer en de API client deployer dezelfde partij is, is de
+'overeenkomst' een besluit in de software-architectuur van die partij. Deze partij is daarmee de *API agreement holder*.
+Zijn het twee verschillende partijen dan zijn zij samen de API agreement holder. Een laatste mogelijkheid is dat een
+grote groep collectief (omschreven) API's van elkaar gebruikt. Dit gebeurt bij een afsprakenstelsel als MedMij. In zo'n
+situatie is een derde partij de API agreement holder, waarmee alle API server deployers en API client deployers een
+deelnemersovereenkomst aangaan.
+
+### Speelveld
+
+De API-overeenkomst − in welke variant dan ook − verwijst naar de API-specificatie(s). Daarmee is het speelveld rond
+(afbeelding 3). De vier hoeken in het speelveld zijn onderling afhankelijk. In één API-overeenkomst kunnen meerdere
+API-specificaties voorkomen. Een API-specificatie kan worden uitgewerkt in verschillende API-implementaties en er kunnen
+meer partijen verantwoordelijk zijn voor het dagelijks gebruik van software waarin de API's zijn ingebouwd (meer API
+deployers voor een API-implementatie).
+
+### Belangenbeleid
+
+Tussen de vier hoeken in dit API-speelveld werken krachten die desbetreffende zijde van het vierkant kenmerken.
+Belangen, verbonden aan informatiegebruik, brengen API deployers ertoe samen een API-overeenkomst of
+uitwisselovereenkomst aan te gaan. Een API-strategie die de totstandkoming van API-overeenkomsten wil bevorderen, moet
+invloed uitoefenen op deze belangen. Die kunnen gaan over informatiebehoeften, financiële voorwaarden of een wens van
+een API deployer om aan te sluiten bij een grote collectieve overeenkomst (strategisch belang).
+
+### Architectuurbeleid
+
+Om de API-specificaties binnen één API-overeenkomst samen de belangen van de deployers te laten dienen, en om
+API-specificaties te standaardiseren voor hergebruik in meerdere API-overeenkomsten, is architectuurbeleid nodig. In
+[hoofdstuk 2](./api-architectuur.md) van dit document worden daarvoor de fundamenten gelegd (afbeelding 1).
+
+### Kwalificatiebeleid
+
+API-specificaties (en daarmee API-overeenkomsten die ernaar verwijzen) worden werkelijkheid als zij worden ingebouwd in
+API-implementaties. Om te bevorderen dat er gekwalificeerde of goed bevonden API-implementaties beschikbaar komen,
+moeten een API-strategie kwalificatiebeleid voeren. Bijvoorbeeld door API-specificaties goed beschikbaar te maken voor
+API developers of door hen te ondersteunen bij het implementeren. Een in software ingebouwde API kan men toetsen op haar
+voldoen aan de API-specificatie. Zo kwalificeert een API-specificatie software op diens compliance aan de specificatie.
+
+### Softwaremarktbeleid
+
+API-implementaties moeten op een gezond functionerende softwaremarkt beschikbaar komen voor gebruik door API deployers.
+Rolkeuzes van softwarepartijen bepalen voor een belangrijk deel de krachten op deze markt. Zo is menig softwarepartij
+tegelijk API specifier, API developer als API deployer. Een API-strategie die de beschikbaarheid van API-implementaties
+wil bevorderen, kan beleid voeren op die rolverdelingen. Andere mogelijkheden zijn de transparantie van de markt
+vergroten, inkoopsamenwerking organiseren of eisen stellen aan toegang van softwarepartijen tot die markt.
