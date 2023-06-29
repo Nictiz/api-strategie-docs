@@ -228,10 +228,14 @@ Om API-eisen te formuleren is een rollenmodel nodig. Een *rol* is een set verant
 partijen aan te binden of zich te laten binden. Een partij kan elke combinatie van rollen spelen, behalve waar dat
 nadrukkelijk wordt uitgesloten.
 
-Afbeelding 4 toont een rollenmodel dat een detaillering is van de rollen die al in afbeelding 3 stonden genoemd. De API
+Afbeelding 6 toont een rollenmodel dat een detaillering is van de rollen die al in afbeelding 3 stonden genoemd. De API
 user en API-provider zijn samen de API agreement holder. De pijlen staan voor rol-relaties. Een eenzijdige pijl van rol
 A naar rol B betekent dat de verantwoordelijkheden van rol B die van rol A respecteren (rol-hiërarchie, verticaal). Een
 tweezijdige relatie staat voor wederzijds respect voor elkaars verantwoordelijkheden (contract-relatie, horizontaal).
+
+![Rollen in de API-strategie.](./assets/images/rollen-in-de-api-strategie.png)
+
+*Afbeelding 6: Rollen in de API-strategie.*
 
 Verticale relaties weerspiegelen de gelaagdheid van het zorginformatiestelsel:
 conceptueel-logisch-applicatie-infrastructuur. Horizontaal onderscheidt het model de gebruikende kant (links) van de
@@ -242,6 +246,10 @@ bemiddelende kolom. De verantwoordelijkheden van deze rollen staan beschreven in
 De API-strategie kent enkele meta-rollen met verantwoordelijkheden voor de API-strategie zelf: verantwoordelijkheid voor
 administratie van API's in een bibliotheek, verantwoordelijkheid voor het opstellen van de API-eisen en
 verantwoordelijkheid voor het verifiëren van API's.
+
+![Meta-rollen in de API-strategie.](./assets/images/meta-rollen-in-de-api-strategie.png)
+
+*Afbeelding 7: Meta-rollen in de API-strategie.*
 
 Een API-eis wordt opgelegd aan één rol. Hierop zijn twee uitzonderingen:
 
@@ -323,7 +331,11 @@ strategieën.
 
 Hier kan een landschap worden geschetst van inhoudelijke strategieën waarvan de API-strategie er één is. Dit landschap
 volgt de niveaus van het specificatiecanvas uit de stelselarchitectuur-visie[^9]. Elk niveau beschouwt een aspect van
-alle informatie die omgaat in het zorginformatiestelsel (afbeelding 6).
+alle informatie die omgaat in het zorginformatiestelsel (afbeelding 8).
+
+![Vijf deelstrategieën.](./assets/images/vijf-deelstrategieën.png)
+
+*Afbeelding 8: Vijf deelstrategieën.*
 
 [^9]: Deze zal binnenkort verschijnen.
 
