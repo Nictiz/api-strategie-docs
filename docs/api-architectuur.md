@@ -266,3 +266,74 @@ Voor de uitwerking van de API-strategie gelden principes en uitgangspunten (zie 
     Deze term is in het veld onderhavig aan aanzienlijke vervaging. Hier wordt met deze term niet geappelleerd aan
     pretenties van brede toepassing of monopolisering van functionaliteit, maar aan het resultaat van het wegfilteren
     van applicatie-afhankelijkheid uit functionaliteit.
+
+## API's voor databeschikbaarheid
+
+API's zijn van strategisch belang voor databeschikbaarheid in het licht van het zorginformatiestelsel
+([paragraaf 1.1](./een-api-strategie-voor-de-zorg.md#strategisch-aandacht-voor-apis)). Men kan overwegen om als principe
+op te nemen dat applicatiesystemen hun data, en eventueel sommige transacties, moeten aanbieden via een API (tabel 1),
+een API die bovendien moet voldoen aan de API-eisen. Zo wordt bestreden dat applicatiesystemen hun data gevangen houden
+binnen hun systeemgrenzen (*information blocking*).
+
+De API-strategie kan echter het voor het zorginformatiestelsel strategische doel databeschikbaarheid niet alleen dragen,
+ook al verzorgt de API-strategie wezenlijke technische voorwaarden voor databeschikbaarheid. Hiervoor zijn twee redenen.
+
+1. Ten eerste is databeschikbaarheid een informatie-inhoudelijke doelstelling die om afspraken vraagt op de hogere
+  niveaus van afbeelding 1 (paragrafen [1.1](./een-api-strategie-voor-de-zorg.md#strategisch-aandacht-voor-apis) en
+  [1.2](./een-api-strategie-voor-de-zorg.md#doel-en-groeipad-van-een-api-strategie)). Anticiperend op zulke afspraken
+  kan een API-strategie voorwaarden scheppen op systeemniveau. Bovendien kan zij de noodzaak van zulke hoger-niveau
+  afspraken urgenter maken, door technologisch gedreven innovatie te stimuleren. Maar via een louter technologische weg
+  kan de API-strategie geen databeschikbaarheid bewerkstelligen.
+2. Ten tweede vraagt databeschikbaarheid uiteindelijk om een meer genuanceerde strategie dan een verplichting tot het
+  ontsluiten van alle data van alle applicaties. Een passende strategie voor databeschikbaarheid moet zeggen welke
+  verantwoordelijken vanuit welke soorten applicatie welke informatie in welke situaties voor welke doelen ter
+  beschikking moeten stellen aan welke anderen onder welke voorwaarden. Hoezeer men ook vanuit secundaire
+  informatiebehoeften ongespecificeerd aanspraak doet op databeschikbaarheid. Zo'n passende strategie voor
+  databeschikbaarheid moet men nastreven met een brede stelselstrategie, een stelselregie die stoelt op een uitgewerkte
+  visie op informatie(her)gebruik.
+
+Hoe kan deze API-strategie toch − binnen haar eigen grenzen − maximaal bijdragen aan databeschikbaarheid? Daarvoor helpt
+het de afhankelijkheid van te specifieke informatiebehoeften te beperken (punt twee hierboven). Dat kan door je te
+concentreren op generieke informatiebouwstenen en databeschikbaarheid te bevorderen per bouwsteen met een API voor die
+informatiebouwsteen. Dit vraagt om een strategische samenwerking met de huidige parallel lopende ontwikkeling van een
+zib-strategie. Dat vereist dan om, op basis van een generiek conceptueel informatiemodel,
+informatiebouwstenen-nieuwe-stijl aan te wijzen en te definiëren. Daarna kan per bouwsteen een API gespecificeerd
+worden. De zib-strategie vertegenwoordigt zo de conceptuele en de logische niveaus van afbeelding 1 en vult daarmee het
+eerste punt van hierboven in: de afhankelijkheid van hogere niveaus.
+
+Binnen de API-strategie kunnen zich − na identificatie van informatie-bouwstenen-nieuwe-stijl − typen API's aandienen
+voor opname in de API-bibliotheek. Deze opname start op de eerste trede. Daarbij vormen Wegiz-verplichtingen een
+belangrijke stimulans. Voor doorgroei naar de derde trede (volledig gestandaardiseerde API's) is nodig dat die
+informatiebouwstenen-nieuwe-stijl niet alleen *geïdentificeerd* zijn, maar ook *gespecificeerd* en *afgebeeld* op een
+API-specificatie.
+
+Zie ook [Bijlage A](./apis-en-informatiebouwstenen-voorbeeld.md).
+
+## Naar samenhangende deelstrategieën
+
+De API-strategie is gepositioneerd op het systeemniveau (afbeelding 1). Dat biedt houvast bij de vormgeving van de
+API-strategie. Dat begrenst het werkingsgebied van de API-strategie, maar ook wat ervan verwacht mag worden. Die
+begrenzing is een natuurlijke voorwaarde voor de effectiviteit van de API-strategie, in relatie tot omliggende
+strategieën.
+
+Hier kan een landschap worden geschetst van inhoudelijke strategieën waarvan de API-strategie er één is. Dit landschap
+volgt de niveaus van het specificatiecanvas uit de stelselarchitectuur-visie[^9]. Elk niveau beschouwt een aspect van
+alle informatie die omgaat in het zorginformatiestelsel (afbeelding 6).
+
+[^9]: Deze zal binnenkort verschijnen.
+
+Hierbij horen enkele toelichtende opmerkingen. De zib-strategie is pril. Hoewel het denken zich beperkt heeft tot het
+logische niveau, ontstaat het bewustzijn dat een gezamenlijk conceptueel model nodig is. Het conceptuele gehalte van dit
+model zal bepalen of de zib-strategie zich ook op dat niveau gaat begeven, of dat een aparte deelstrategie voor het
+conceptuele niveau nodig is.
+
+Een informatiebeleid-strategie en infrastructuurstrategie worden nog niet als zodanig onderkend. Elementen hiervan
+kleuren evengoed al jaren het debat over het zorginformatiestelsel. Deze twee niveaus zijn het minst afhankelijk van de
+specifieke complexiteit van informatie en daarom wellicht het snelst en eenvoudigst opgeworpen. Daaronder zou de
+verwachting kunnen schuilgaan dat met deze 'deksel' en 'bodem' van het specificatiecanvas ook de uitdagingen van de
+middelste drie niveaus kunnen worden beslecht. Dat zou een onderschatting zijn. Het is eerder andersom: organisatie en
+infrastructuur zijn letterlijk de sluitstukken van het stelsel. De informatie in het midden vormt de kern.
+
+De term *infrastructuur* is aanzienlijk vertroebeld in het debat over het zorginformatiestelsel. In het kader van de
+API-strategie verstaan we daaronder alle systemen waarover API's worden afgewikkeld, ongeacht om welke API het precies
+gaat. De term infrastructuur zegt zo dus nog niets over hoeveel partijen haar (zouden moeten) gebruiken.
