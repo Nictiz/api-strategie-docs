@@ -337,3 +337,85 @@ infrastructuur zijn letterlijk de sluitstukken van het stelsel. De informatie in
 De term *infrastructuur* is aanzienlijk vertroebeld in het debat over het zorginformatiestelsel. In het kader van de
 API-strategie verstaan we daaronder alle systemen waarover API's worden afgewikkeld, ongeacht om welke API het precies
 gaat. De term infrastructuur zegt zo dus nog niets over hoeveel partijen haar (zouden moeten) gebruiken.
+
+## Eerder adviesrapport
+
+Het adviesrapport[^10] dat de aanleiding is voor deze API-strategie, doet zes aanbevelingen. Aanvullend staat hier hoe
+deze API-strategie zich daartoe verhoudt.
+
+[^10]:
+    Nictiz, Op weg naar een API-strategie voor de zorg, Adviesrapport aan Ministerie van VWS, versie 1.0, 17 december
+    2021
+
+1. Stimuleer de ontwikkeling van een *API-strategie voor de zorg* en zorg daarbij voor een brede vertegenwoordiging van
+  het veld. Hieraan geeft deze API-strategie opvolging.
+2. Stimuleer vroegtijdige opname van API's in de API-bibliotheek om de meerwaarde van een API-bibliotheek en
+  mogelijkheden van hergebruik aan te tonen. Dit krijgt opvolging in
+  [paragraaf 1.4](./een-api-strategie-voor-de-zorg.md#middelen-van-de-api-strategie) en in een apart document.
+3. Stuur op een groeimodel van niet-gestandaardiseerde API's naar gestandaardiseerde API's zodat zowel de
+  innovatiekracht van leveranciers als de interoperabiliteit in het stelsel is geborgd. Dit krijgt opvolging in
+  paragrafen [1.2](./een-api-strategie-voor-de-zorg.md#doel-en-groeipad-van-een-api-strategie) en
+  [1.4](./een-api-strategie-voor-de-zorg.md#middelen-van-de-api-strategie) en in een apart document met API-eisen.
+4. Onderken de verschillen tussen zibs, API's, applicaties en infrastructuur en zorg voor borging in het duurzame
+  informatiestelsel. Dit krijgt in [paragraaf 2.8](#naar-samenhangende-deelstrategieën) opvolging.
+5. Onderzoek welke onderdelen van de API-strategie normatief kunnen worden verklaard. In de stelselarchitectuur-visie
+  wordt wet- en regelgeving als sluitstuk gezien van beleidsvorming. Daar waar noodzakelijke kwaliteiten meer vragen dan
+  regulier beleid, is *normering* aan de orde.
+6. Zorg ervoor dat normen voor generieke functies leiden tot implementaties die breed bruikbaar zijn in de zorg, zodat
+  ook API's daarvan gebruik kunnen maken. Dit moet onderdeel zijn van een strategie voor generieke functies, al dan niet
+  als onderdeel van een brede strategie voor het zorginformatiestelsel.
+
+Hetzelfde adviesrapport somt drie groepen adviezen op die gelden als vertrekpunt voor de uitwerking van de API-strategie
+en haar middelen. De eerste groep adviezen vloeit voort uit de wensen van zorgprocessen en zorgaanbieders (tabel 2) en
+vraagt daarom allereerst om afspraken op de hogere niveaus (afbeelding 1). Afspraken die doorwerken op API's (zie
+[paragraaf 2.7](#apis-voor-databeschikbaarheid)).
+
+Een tweede groep adviezen vloeit voort uit de wensen van softwareleveranciers (tabel 3). Aan deze groep wensen komen de
+in [hoofdstuk 1](./een-api-strategie-voor-de-zorg.md) genoemde strategische middelen van de API-strategie tegemoet: de
+API-eisen, de API-bibliotheek en de API-technologie-agenda.
+
+Voor een laatste groep wensen over het zorginformatiestelsel (tabel 4) geldt hetzelfde als voor de eerste groep. Veel
+adviezen in deze tabellen worden dus geraakt met de vierde hoofdaanbeveling: onderken de verschillen tussen zibs, API's,
+applicaties en infrastructuur en zorg voor borging in het duurzame informatiestelsel.
+
+|            | Advies                                                                                                                                                                                                                                                                                                                                                                                               |
+|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ontwerp    | Ontwerp API's zo dat ze een betekenisvolle set van gegevens ontsluiten.                                                                                                                                                                                                                                                                                                                              |
+| ontwerp    | Zorg voor flexibiliteit in de gegevens die API's ontsluiten. API's bevatten voldoende filtermogelijkheden om de juiste informatiebehoefte te dekken en voldoende selectiemogelijkheden op de gegevenselementen die beschikbaar gesteld worden. Houd hierbij rekening met autorisatie, capaciteit, doseerbaarheid, et cetera.                                                                         |
+| ontwerp    | Ontsluit in een API gegevens die voldoende rijk zijn. Daarmee kan men eenvoudig doorvragen naar aanvullende informatie en makkelijk vervolgvragen stellen en beantwoorden.                                                                                                                                                                                                                           |
+| ontwerp    | Bied API's aan die nieuwe of gewijzigde gegevens actief uitsturen (push) om afhankelijke toepassingen en processen te voeden (bijvoorbeeld Acute zorg, AI-modellen of datawarehouses).                                                                                                                                                                                                               |
+| ontwerp    | Geef in API-specificaties informatie over de betrouwbaarheid van de gegevens en transparantie over het toegangsbeleid. Afnemers om commerciële redenen uitsluiten is niet toegestaan.                                                                                                                                                                                                                |
+| toepassing | Maak API's herbruikbaar voor verschillende toepassingen zoals primaire zorg, managementinformatie, kwaliteitsregistraties en wetenschappelijk onderzoek.                                                                                                                                                                                                                                             |
+| toepassing | Geef de API-eisen dusdanig vorm dat ze van toepassing zijn op API's van informatiesystemen, (regionale) platformen en portalen.                                                                                                                                                                                                                                                                      |
+| toepassing | Bied (convenience) API's aan voor bijvoorbeeld wetenschappelijk onderzoek of kwaliteit die een mogelijkheid bieden voor anonieme of gepseudonimiseerde ontsluiting van gegevens.                                                                                                                                                                                                                     |
+| beleid     | Werk uit hoe API's gebruik maken van generieke functies en voorzieningen voor bijvoorbeeld identificatie, authenticatie, autorisatie, toestemming en logging. Ook leveranciers hebben deze behoefte geuit. De functies zijn nodig om te voldoen aan wet- en regelgeving bij gegevensuitwisseling.                                                                                                    |
+| beleid     | Geef richting aan de keuzes op de applicatie-laag van het meer-lagenmodel. Daarbij is de keuze voor internationale standaarden zoals Open API en HL7 FHIR preferent en kunnen we leren van ervaringen uit andere landen.                                                                                                                                                                             |
+| beleid     | Bied kaders en handreikingen aan de technische specificaties voor het ontsluiten van zowel losse concepten (bijvoorbeeld zibs) als composities (bijvoorbeeld medicatieoverzicht of zwangerschapskaart).                                                                                                                                                                                              |
+| beleid     | Wees leveranciers-onafhankelijk en voorkom information blocking. API-eisen en API-specificaties in de bibliotheek trekken geen leveranciers voor en zijn niet beperkt tot gebruik door één leverancier. Leveranciers onderscheiden zich op bijvoorbeeld functionaliteit, user interface en dienstverlening. Zorgaanbieders houden de keuzevrijheid om van verschillende aanbieders gebruik te maken. |
+
+*Tabel 2: Geadviseerde eisen van zorgprocessen en aanbieders.*
+
+|         | Advies                                                                                                                                                                                                                                                                                           |
+|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ontwerp | Maak gebruik van internationale standaarden en sluit aan bij ontwikkelingen die in het buitenland spelen. HL7 FHIR mag niet ontbreken in de strategie; voor bestaande API's die gebaseerd zijn op andere standaarden moeten keuzes worden gemaakt en een migratie-strategie worden geformuleerd. |
+| ontwerp | Maak eenduidige afspraken over releasemanagement en versionering van API's.                                                                                                                                                                                                                      |
+| ontwerp | Verplicht het beschikbaar stellen van een testomgeving voor API's.                                                                                                                                                                                                                               |
+| ontwerp | Onderzoek de mogelijkheden voor een gedeelde ontwikkelomgeving of tooling.                                                                                                                                                                                                                       |
+| beleid  | Stimuleer het hergebruik van API's voor verschillende informatiebehoeften.                                                                                                                                                                                                                       |
+| beleid  | Bied ruimte voor innovatie en standaardisatie door ondersteuning van zowel gestandaardiseerde als niet-gestandaardiseerde API's.                                                                                                                                                                 |
+| beleid  | Stimuleer hergebruik van bestaande API's en ondersteun daarin ook het doorgroeien van niet-gestandaardiseerde API's naar gestandaardiseerde API's.                                                                                                                                               |
+| beleid  | Stel API-specificaties kosteloos ter beschikking. Onderzoek voor het gebruik van API's of publieke of private afspraken nodig zijn.                                                                                                                                                              |
+
+*Tabel 3: Geadviseerde eisen van leveranciers.*
+
+|            | Advies                                                                                                                                                                                                                              |
+|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ontwerp    | Baseer de beschrijving van de gegevens die API's aanbieden op bouwstenen uit de informatie-laag (zibs).                                                                                                                             |
+| ontwerp    | Baseer de maatvoering van API's op een of meerdere zibs in combinatie met de maatvoering in de gebruikte communicatiestandaard.                                                                                                     |
+| toepassing | Gebruik bij de ontwikkeling van informatiestandaarden zoveel mogelijk bestaande API's.                                                                                                                                              |
+| toepassing | Gebruik filters en selecties op bestaande API's voor een toepassing-specifieke invulling in plaats van het ontwikkelen van nieuwe API's.                                                                                            |
+| toepassing | Introduceer hergebruik om kwalificatie te vereenvoudigen: splitskwalificatie van de techniek door generieke API's en de toepassings-specifieke invulling aanvullend op elkaar te kwalificeren.                                      |
+| beleid     | Beschrijf in de API-strategie hoe API's zich verhouden tot andere onderdelen in het duurzame informatiestelsel.                                                                                                                     |
+| beleid     | Breid de huidige bouwstenen op de informatie-laag uit zodat ontbrekende gegevens (bijvoorbeeld procesgegevens, contextgegevens, identificaties en relaties naar andere zibs) beschikbaar zijn voor toepassing in API-specificaties. |
+
+*Tabel 4: Geadviseerde eisen in relatie tot het zorginformatiestelsel.*
