@@ -90,3 +90,49 @@ De ontwikkeling van een API-strategie voor het zorginformatiestelsel heeft Nicti
 vele anderen. Dit is een vervolg op een eerder door Nictiz uitgebracht advies aan het Ministerie van Volksgezondheid,
 Welzijn en Sport (VWS). Dat advies werd gevraagd in de context van de beantwoording van Kamervragen over het
 wetsvoorstel Wegiz (Wet Elektronische gegevensuitwisseling in de zorg).
+
+## Doel en groeipad van een API-strategie
+
+### Doel
+
+Databeschikbaarheid vraagt om meer dan alleen data technisch bevrijden uit systemen. Dan komt de data namelijk alleen in ruwe technische vorm beschikbaar, zonder dat duidelijk is of en hoe die data bruikbaar is buiten het systeem. Daarom moet een API-strategie niet alleen streven naar inzet van meer API's, maar ook naar inzet van goede API's: API's die data (en transacties) zo beschikbaar stellen dat zij bruikbaar zijn in expliciete zorginformatiebehoeften. Een API-strategie moet die bruikbaarheid dus definiëren en bevorderen.
+
+> Het doel van de API-strategie is: inzet van meer goede API's.
+
+### Groeipad
+
+Goede API's maken data en transacties vrij die bruikbaar zijn in de context van de informatiebehoeften van de zorg.
+Zoals in [paragraaf 1.1](#strategisch-aandacht-voor-apis) benadrukt, zijn API's voor die gebruikskwaliteit afhankelijk
+van afspraken op de hogere niveaus: het logische niveau, het taal- en het organisatieniveau. Dat speelt niet alleen bij
+databeschikbaarheid maar ook bij de standaardisatie, en bij gebruiksvriendelijkheid en implementeerbaarheid van die
+standaarden.
+
+Toch beperkt een API-strategie zich er niet toe eenvoudigweg te stellen dat API's moeten passen in afspraken op hogere
+niveaus. Daarmee zouden kansen worden gemist op welkome en passende technologie-gedreven innovatie
+([paragraaf 1.1](#strategisch-aandacht-voor-apis)). Bovendien zou dat de mogelijkheid ontnemen om actief strategie te
+voeren op de groei van de kwaliteit van API's.
+
+Daarom hanteert de API-strategie een groeipad voor API's langs drie treden. Op de eerste trede stelt de API-strategie
+eisen aan de documentatie van de API-specificatie, als minimale kwaliteit om op voort te bouwen. Zonder geschikte
+documentatie mist een API elk aangrijpingspunt voor groei. Op de tweede trede stelt de API-strategie ook technische
+eisen aan API's. Hier kunnen API's groeien in interoperabiliteit en implementeerbaarheid, zonder een afhankelijkheid van
+hogere niveaus (het logische niveau, het taal- en het organisatieniveau). Die afhankelijkheid bestaat wel op de derde en
+hoogste trede (afbeelding 2).
+
+Het doel van de API-strategie is om veel API's te verwelkomen op de eerste trede van het groeipad en deze te stimuleren
+in hun groei naar hogere treden. Vanzelfsprekend kunnen API's ook onmiddellijk instappen op hogere treden, wanneer zij
+aan desbetreffende eisen voldoen.
+
+Langs dezelfde treden groeien API's in hun implementatie-onafhankelijkheid
+([paragraaf 1.1](#strategisch-aandacht-voor-apis)). Op de eerste twee treden wordt die nog niet vereist maar op de derde
+wel. Zo staat de API-strategie zo lang mogelijk open voor technologie-gedreven innovatie en ziet zij het
+implementatie-onafhankelijk worden van API's als volwassen worden. Maar groei is niet verplicht. Het staat een
+specificerende partij vrij om daarvan af te zien (en een API op een eerste of tweede trede te laten).
+
+Er zijn autoriteiten nodig die de inhoudelijke standaarden vaststellen waarop een API wordt beoordeeld voor de derde
+trede. Het valt buiten de scope van de API-strategie om deze autoriteiten te benoemen, maar op de derde trede is de
+API-strategie wel van hun werk afhankelijk.
+
+Een volledig gestandaardiseerde API (op de derde trede) geniet die status alleen voor de inhoudelijke
+informatiestandaard waarop de API is beoordeeld. Zo kan het voorkomen dan een API vaker voorkomt op trede drie namelijk
+voor verschillende informatiestandaarden (waarvoor de API geschikt is bevonden).
