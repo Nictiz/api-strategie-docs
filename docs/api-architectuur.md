@@ -126,6 +126,10 @@ Dit onderscheid is in de API-strategie voor de zorg van groot belang. Het onders
 API weerspiegelt het onderscheid tussen verwerking van informatie (links in afbeelding 1) en uitwisseling van informatie
 (rechts in afbeelding 1) in het zorginformatiestelsel.[^5]
 
+![Positie van API's in het zorginformatiestelsel.](./assets/images/positie-van-apis-in-het-zorginformatiestelsel.png)
+
+*Afbeelding 5: Positie van API's in het zorginformatiestelsel.*
+
 [^5]:
     Afbeelding 1 noemt system API's en process API's data-API's en transactie-API's. Engelstalige teksten gebruiken de
     in de software-community gangbare termen.
