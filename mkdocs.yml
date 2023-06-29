@@ -1,0 +1,100 @@
+﻿# Project information
+site_name: API-strategie voor de zorg
+site_description: >-
+  Nictiz heeft een API-strategie voor de zorg ontwikkeld. Daarin staat de ontwikkeling van API's naar
+  gestandaardiseerde uitwisselingen centraal.
+site_author: Nictiz
+site_url: https://nictiz.github.io/api-strategie-docs/
+
+# Repository
+repo_url: https://github.com/nictiz/api-strategie-docs
+edit_uri: blob/main/docs/
+
+# Navigation
+nav:
+  - 'Overzicht': index.md
+  - 'Samenvatting': samenvatting.md
+  - 'Een API-strategie voor de zorg': een-api-strategie-voor-de-zorg.md
+  - 'API-architectuur': api-architectuur.md
+  - 'API''s en informatiebouwstenen: voorbeeld': apis-en-informatiebouwstenen-voorbeeld.md
+  - 'Toelichting op de verfijning van het vijflagenmodel': toelichting-op-de-verfijning-van-het-vijflagenmodel.md
+  - 'Beschrijving van de API-rollen': beschrijving-van-de-api-rollen.md
+  - 'Bijdragen': bijdragen.md
+  
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  language: nl
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Donkere modus
+      primary: deep orange
+      accent: deep orange
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Lichte modus
+      primary: deep orange
+      accent: deep orange
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.action.view
+    - content.action.edit
+  font:
+    text: Roboto
+    code: JetBrains Mono
+
+extra:
+  # Version provider
+  # Default version is identified by the `latest` alias
+  version:
+    provider: mike
+  consent:
+    title: Toestemming voor cookies
+    description: >-
+      We gebruiken cookies om uw herhaalde bezoeken en voorkeuren te herkennen, om de effectiviteit van onze
+      documentatie te meten en om na te gaan of gebruikers vinden wat ze zoeken. Met uw toestemming helpt u ons om onze
+      documentatie te verbeteren.
+  analytics:
+    provider: google
+    property: G-XB0WW4TKK1
+    feedback:
+      title: Was deze pagina nuttig?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: Deze pagina was nuttig
+          data: 1
+          note: >-
+            Bedankt voor uw feedback!
+        - icon: material/emoticon-sad-outline
+          name: Deze pagina kan worden verbeterd
+          data: 0
+          note: >-
+            Bedankt voor uw feedback! Help ons deze pagina te verbeteren door
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7rtGZVXdT2g-B-mMYJq48jsOfJf-YVQbWTDEzOzAoBtxVpw/viewform?entry.816166561={url}" target="_blank" rel="noopener">ons te vertellen wat u mist</a>.
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/nictiz/
+
+copyright: >-
+  Copyright &copy; 2023 Nictiz | <a href="#__consent">Cookie-instellingen wijzigen</a> |
+  <a href="https://nictiz.nl/privacy-statement" target="_blank" rel="noopener">Privacy statement</a>
+
+# Extensions
+markdown_extensions:
+  - footnotes
+
+plugins:
+  - search
+  - mike:
+      canonical_version: latest
