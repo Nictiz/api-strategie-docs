@@ -1,3 +1,3 @@
-﻿# Hoe bij te dragen
+﻿# Bijdragen
 
 Deze informatie volgt.
