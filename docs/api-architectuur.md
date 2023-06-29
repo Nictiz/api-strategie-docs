@@ -154,3 +154,93 @@ Van de hier benoemde typologieën spelen er dus twee een funderende rol in de AP
 
 Beide typologieën betreffen allereerst API-specificaties, maar gelden ook voor de API-implementaties en API-deployments
 die gebaseerd zijn op zo'n API-specificatie.
+
+## API-paradigma's en technologiestandaarden
+
+Met een *API* ontsluit een softwareapplicatie functionaliteit aan andere softwareapplicaties, zonder die andere
+applicaties te belasten met hoe dat precies gebeurt. Belangrijk daarbij is hoe beide zijden aankijken tegen
+functionaliteit of welk *paradigma* zij gebruiken voor functionaliteit. Zo zijn er bijvoorbeeld (zonder te pretenderen
+een definitieve en complete lijst te geven):
+
+- het berichten-paradigma: via een API stuurt de ene applicatie een bericht naar de andere. Bekende
+  technologiestandaarden voor dit paradigma zijn HL7v2, FHIR Messaging en
+  [EDIFACT](https://nictiz.nl/standaarden/overzicht-van-standaarden/edifact/);
+- het document-paradigma: via een API stuurt de ene applicatie een document naar de andere. Bekende
+  technologiestandaarden voor dit paradigma voor de zorg zijn
+  [HL7-CDA](https://nictiz.nl/standaarden/overzicht-van-standaarden/hl7-cda-r2/),
+  [XDS](https://nictiz.nl/standaarden/overzicht-van-standaarden/xds/) en FHIR Documents;
+- het procedure-paradigma: via een API zet de ene applicatie een procedure bij de andere in gang. Een bekende
+  technologiestandaard voor dit paradigma is [SOAP](https://nl.wikipedia.org/wiki/SOAP_(protocol));
+- het resource-paradigma: via een API spreekt de ene applicatie een gegevensbron aan bij de andere. De API wordt dan
+  RESTful genoemd. Bekende technologieën voor dit paradigma zijn OpenAPI[^6] en − voor de zorg −
+  [HL7-FHIR](https://nictiz.nl/standaarden/overzicht-van-standaarden/hl7-fhir/);
+- het query-paradigma: via een API bevraagt de ene applicatie een samenhangend geheel van gegevensbronnen bij andere.
+  Bekende API-technologieën in dit paradigma zijn [SPARQL](https://www.w3.org/TR/rdf-sparql-query/) en
+  [GraphQL](https://graphql.org/).
+
+[^6]:
+    ook wel Swagger genoemd en niet te verwarren met de term open API die deze API-strategie hanteert voor de eerste
+    trede van het API-groeipad (afbeelding 2)
+
+Een keuze voor een API-paradigma is voor de software-architectuur van groot belang en verdient expliciete aandacht. De
+paradigma's verschillen vooral in de verdeling van basisverantwoordelijkheden tussen server en client, bijvoorbeeld voor
+het bijhouden van status of het samenstellen van data uit onderdelen. In het ene paradigma ontslaat de server de client
+meer van dergelijke verantwoordelijkheden dan in het andere paradigma, maar trekt daarmee ook meer controle naar zich
+toe. Bij elk paradigma hoort een eigen verzameling technische standaarden die de verschillende paradigma-kenmerken
+standaardiseren. Voorbeelden zijn communicatieprotocollen en coderingsstandaarden. Maar vaak gebruiken verschillende
+paradigma's dezelfde technische standaarden.
+
+De geschiedenis laat een evolutie zien in de populariteit van de paradigma's: van het bericht-paradigma, via het
+document-paradigma naar het momenteel populaire resource-paradigma. Ondertussen lijkt het query-paradigma aan
+populariteit te winnen. Door deze wereldwijde en zorg-overstijgende dynamiek in API-paradigma's kan en moet een
+API-strategie voor de zorg met een rollende API-technologie-agenda
+([paragraaf 1.4](./een-api-strategie-voor-de-zorg.md#middelen-van-de-api-strategie)) de wereldwijde API-ontwikkelingen
+volgen en vertalen naar de actuele behoefte van het Nederlandse zorginformatiestelsel. De API-eisen zullen waar nodig
+aangeven voor welk paradigma of welke technologie zij zijn bedoeld.
+
+## Infrastructuur
+
+API's zijn ook in te delen naar de infrastructuren waarover zij werken. De API-strategie voor de zorg richt zich
+allereerst op API's over infrastructuren die zich laten gebruiken volgens het
+[HTTP-protocol](https://nl.wikipedia.org/wiki/Hypertext_Transfer_Protocol). Het meeste internetverkeer is HTTP-verkeer.
+Het internet wordt echter ook gebruikt via andere application-layer[^7] protocollen zoals
+[SMTP](https://nl.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) of
+[FTP](https://nl.wikipedia.org/wiki/File_transfer_protocol). Veel API's (zoals die gebaseerd op SOAP) werken over zowel
+HTTP als SMTP en FTP. RESTful API's werken alleen over HTTP, omdat zij aan HTTP methods functionele betekenis hechten.
+
+[^7]:
+    Deze term komt uit het OSI-model en moet niet worden verward met de applicatielaag van bijvoorbeeld het
+    Nictiz-vijflagenmodel. OSI gaat alleen over infrastructuur: de application-layer protocollen zijn de protocollen die
+    binnen de infrastructuur het dichtst tegen de applicaties aanliggen en hen in zekere zin 'direct' van dienst zijn.
+
+De voorlopige nadruk van de API-strategie op HTTP-gebaseerde API's is een pragmatische keuze. Die is ingegeven door
+behoefte aan (technische) scopebeperking en door de wetenschap dat de meeste API's binnen en buiten de zorg over HTTP
+worden aangeboden. Het streven is om de API-eisen zo op te zetten, dat uitbreiding eenvoudig mogelijk is, bijvoorbeeld
+naar op SMTP-gebaseerde eisen.
+
+## Rollen
+
+Om API-eisen te formuleren is een rollenmodel nodig. Een *rol* is een set verantwoordelijkheden, bedoeld om individuele
+partijen aan te binden of zich te laten binden. Een partij kan elke combinatie van rollen spelen, behalve waar dat
+nadrukkelijk wordt uitgesloten.
+
+Afbeelding 4 toont een rollenmodel dat een detaillering is van de rollen die al in afbeelding 3 stonden genoemd. De API
+user en API-provider zijn samen de API agreement holder. De pijlen staan voor rol-relaties. Een eenzijdige pijl van rol
+A naar rol B betekent dat de verantwoordelijkheden van rol B die van rol A respecteren (rol-hiërarchie, verticaal). Een
+tweezijdige relatie staat voor wederzijds respect voor elkaars verantwoordelijkheden (contract-relatie, horizontaal).
+
+Verticale relaties weerspiegelen de gelaagdheid van het zorginformatiestelsel:
+conceptueel-logisch-applicatie-infrastructuur. Horizontaal onderscheidt het model de gebruikende kant (links) van de
+aanbiedende kant (rechts), met per kant een gedragskolom met erachter een productkolom. In het midden een
+bemiddelende kolom. De verantwoordelijkheden van deze rollen staan beschreven in Bijlage C.
+
+De API-strategie kent enkele meta-rollen met verantwoordelijkheden voor de API-strategie zelf: verantwoordelijkheid voor
+administratie van API's in een bibliotheek, verantwoordelijkheid voor het opstellen van de API-eisen en
+verantwoordelijkheid voor het verifiëren van API's.
+
+Een API-eis wordt opgelegd aan één rol. Hierop zijn twee uitzonderingen:
+
+- Wanneer een eis de interactie betreft tussen server- en client-zijde kunnen de betreffende varianten van developer- en
+  deployer-rollen samen worden aangesproken.
+- Wanneer een eis de afhankelijkheid betreft tussen verschillende verschijningsvormen van API's (bijvoorbeeld tussen
+  API-implementatie en API deployment) kunnen bijbehorende rollen samen worden aangesproken.
