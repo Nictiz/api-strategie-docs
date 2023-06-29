@@ -47,7 +47,7 @@ internationale technische basisstandaarden).
 De internationale gemeenschap classificeert API's op verschillende manieren. Het algemene deel van de Nederlandse
 API-strategie[^2] biedt daarvan goede voorbeelden:
 
-[^2]: [Typologie van API's](https://docs.geostandaarden.nl/api/API-Strategie/#typologie-van-api-s)
+[^2]: Zie [Typologie van API's](https://docs.geostandaarden.nl/api/API-Strategie/#typologie-van-api-s).
 
 - interne – en externe API-overeenkomsten;
 - unrestricted-use en restricted-use API deployments;
@@ -74,7 +74,7 @@ toegangsvoorwaarden en ontbreekt de behoefte aan autorisatie en authenticatie. I
 iets anders. Omdat de API-strategie voor de zorg de internationale termen wil overnemen, gebruikt zij voor het
 onderhavige onderscheid de termen *unrestricted-use API* en *restricted-use API*.
 
-[^3]: niet te verwarren met de technologie OpenAPI uit [paragraaf 2.4](#infrastructuur)
+[^3]: Niet te verwarren met de technologie OpenAPI uit [paragraaf 2.4](#infrastructuur).
 
 Het onderscheid tussen unrestricted-use en restricted-use API's speelt uiteindelijk bij een API-deployment. Daarin
 krijgt toegangsbeleid zijn beslag, dat in voorafgaande API-overeenkomsten, API-specificaties en API-implementatie vorm
@@ -179,8 +179,8 @@ een definitieve en complete lijst te geven):
   [GraphQL](https://graphql.org/).
 
 [^6]:
-    ook wel Swagger genoemd en niet te verwarren met de term open API die deze API-strategie hanteert voor de eerste
-    trede van het API-groeipad (afbeelding 2)
+    Ook wel Swagger genoemd en niet te verwarren met de term open API die deze API-strategie hanteert voor de eerste
+    trede van het API-groeipad (afbeelding 2).
 
 Een keuze voor een API-paradigma is voor de software-architectuur van groot belang en verdient expliciete aandacht. De
 paradigma's verschillen vooral in de verdeling van basisverantwoordelijkheden tussen server en client, bijvoorbeeld voor
