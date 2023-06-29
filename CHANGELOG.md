@@ -9,6 +9,11 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [1.1.0] - 2023-06-29
+
+This release refactors documentation to Markdown, introduces git conventions and automates the deployment of new
+versions to GitHub Pages as a fast, simple and searchable static site.
+
 ### Changed
 
 - Refactor v1.0.0 docs to Markdown
