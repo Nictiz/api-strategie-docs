@@ -217,3 +217,101 @@ Rolkeuzes van softwarepartijen bepalen voor een belangrijk deel de krachten op d
 tegelijk API specifier, API developer als API deployer. Een API-strategie die de beschikbaarheid van API-implementaties
 wil bevorderen, kan beleid voeren op die rolverdelingen. Andere mogelijkheden zijn de transparantie van de markt
 vergroten, inkoopsamenwerking organiseren of eisen stellen aan toegang van softwarepartijen tot die markt.
+
+## Middelen van de API-strategie
+
+De API-strategie zet vooralsnog drie strategische middelen in: API-eisen, een API-technologie-agenda en een
+API-bibliotheek. Zoals in [paragraaf 1.3](#api-speelveld-en-krachten) beschreven bestaan in het speelveld vier soorten
+beleid: rond belangen, architectuur, kwalificatie en softwaremarkt. Een API-strategie richt zich primair op
+architectuur- en kwalificatiebeleid. Van een API-strategie kan amper eigenstandig effect worden verwacht op
+gebruiksbelangen en softwaremarkt. Gebruiksbelangen tussen API deployers beginnen immers op het organisatie- en
+taalniveau (afbeelding 1) en eindigen op systeemniveau. Het organisatie- en taalniveau liggen buiten bereik van een
+API-strategie. Dat wil niet zeggen dat een API-strategie hier geen bijdrage kan leveren, maar wel dat die bijdrage
+alleen effectief kan worden in de context van breder stelselbeleid.
+
+Softwaremarktbeleid op haar beurt is niet alleen een API-aangelegenheid. Software omvat veel meer dan API's, zoals
+eindgebruikersfunctionaliteit. Ook dat ligt buiten bereik van een API-strategie. Opnieuw geldt dat een API-strategie
+hier kan en moet bijdragen, maar pas effectief kan worden in de context van algemeen softwaremarktbeleid.
+
+### API-eisen
+
+De API-specificatie verbindt architectuur- en kwalificatiebeleid (afbeelding 3) en vormt daarmee de spil van de
+API-strategie. Niet voor niets is een goede documentatie van die API-specificatie een minimumvereiste in het groeipad
+voor API's (afbeelding 2). De API-strategie voert architectuurbeleid door *API-eisen* te formuleren op de drie treden
+van dat groeipad.
+
+De API-eisen zijn het eerste strategisch middel van de API-strategie. Op de eerste trede betreffen deze eisen vooral de
+documentatie van de API-specificatie; op de hogere treden spelen ook de andere verschijningsvormen van API's: de
+API-implementatie, de API-inzet en de API-overeenkomst. Steeds worden de eisen verbonden aan een specifieke rol uit
+afbeelding 3. Zo wordt elke partij in het API-speelveld aangesproken op de API-eisen die zijn verbonden aan precies die
+rollen die deze partij speelt. Deze precisie maakt dat de API-strategie accuraat kan beïnvloeden en bevordert dus haar
+effectiviteit.
+
+### API-technologie-agenda
+
+De API-strategie moet een 'rollende' *API-technologie-agenda* opstellen en onderhouden. Deze agenda wijst voortdurend
+aan welke API-paradigma's en -technologiestandaarden van belang zijn op de tweede trede van het groeipad voor API's
+(afbeelding 2). Dat betekent dat er specifieke API-eisen kunnen bestaan voor elk API-paradigma dat, en elke
+API-technologie die, op enig moment op de API-technologie-agenda staat.
+
+Op de tweede trede van het groeipad voor API's stelt de API-strategie eisen aan de technische standaardisatie van API's.
+Op die trede moet de API-strategie rekening houden met een actuele en structurele diversiteit in API-technologieën en
+hoe die fundamenteel zijn opgezet (de API-paradigma's). Dit maakt het (om diverse redenen) riskant om in het
+zorginformatiestelsel te kiezen voor slechts een van dergelijke API-paradigma's en -technologieën.
+
+Om te beginnen kennen data-API's van nature een andere opzet dan transactie-API's. Maar ook binnen deze categorieën
+bestaan wezenlijke verschillen tussen API-paradigma's. De zogenoemde REST-paradigma doet momenteel opgeld voor
+data-API's. Ook oudere paradigma's zijn nog steeds zeer gangbaar en aan de horizon melden zich nieuwe paradigma's. En zo
+bestaan ook voor transactie-API's die diversiteit en evolutie.
+
+De interoperabiliteit en implementeerbaarheid van het zorginformatiestelsel vragen erom voortdurend selectief te zijn in
+de keuze uit de op enig moment gangbare en voorhanden API-paradigma's en -technologieën. Daarbij moeten terdege rekening
+worden gehouden met de *installed base*: de op basis van vroegere keuzes in gebruik genomen API-implementaties. Die kan
+niet zomaar afgeschreven worden, wel gaandeweg aangepast of vervangen.
+
+Mocht het Nederlandse zorginformatiestelsel zich toch willen vastleggen op slechts een technologische standaard, dan
+komt ooit het moment waarop die keuze moeten worden herzien. Dan staat het stelsel voor een enorme transitie-uitdaging.
+Een bijkomende keuze voor bijbehorende logische standaarden maakt die transitie bijna ondoenlijk: de transitie vraagt
+dan ook een herontwerp op de hogere niveaus. Dat is een reden om bij voorkeur een duidelijke scheiding aan te houden
+tussen de gegevensinhoudelijke en de technische standaardisatie (afbeelding 1).
+
+Standaardisatie van specifieke API-technologieën vindt (ook wereldwijd) vooral plaats per maatschappelijke of
+economische sector. Als internationale standaardisatieorganisatie voor het zorgdomein kent HL7 zelf standaarden voor
+verschillende paradigma's, waaronder FHIR voor onder andere het REST-paradigma. De technologische praktijk is en zal
+waarschijnlijk divers en evoluerend blijven: niet zorg-specifiek, wel internationaal.
+
+Een API-technologie-agenda opstellen en onderhouden is niet alleen een technologische aangelegenheid. Er zijn
+substantiële belangen, risico's en kosten mee gemoeid op de schaal van het hele zorginformatiestelsel. Zo'n agenda
+vaststellen is daarmee een wezenlijk aandachtpunt voor de partij die als houder van de API-strategie gaat optreden.
+Zolang deze partij niet is aangewezen en een API-technologieagenda voorlopig ontbreekt, kan men op voorhand beginnen met
+API-eisen voor REST API's en mogelijk daarna met een paradigma voor transactie-API's. Deze twee paradigma's zijn
+gangbaar en zullen dat waarschijnlijk nog enige tijd blijven.
+
+Zie hiervoor ook [paragraaf 2.3](./api-architectuur.md#api-paradigmas-en-technologiestandaarden).
+
+### API-bibliotheek
+
+Om met de API-eisen effect te sorteren in het API-speelveld (afbeelding 3), moet de API-strategie kwalificatiebeleid
+voeren. Het is nodig de API-eisen en de achterliggende API-technologie-agenda te publiceren en toe te lichten. Daarnaast
+sorteert de API-strategie gerichter effect door ook te communiceren *wat* voldoet aan de API-eisen.
+
+1. Door te communiceren welke *API-specificaties* voldoen aan de zekere API-eisen, biedt de API-strategie aan API
+  agreement holders de mogelijkheid vertrouwde API-specificaties op te nemen in hun API-overeenkomsten. Dit bevordert de
+  adoptie van gestandaardiseerde API's. Bovendien kan de wetgever zo nodig putten uit deze bibliotheek om zulke
+  API-specificaties te normeren en te verplichten.
+2. Door te communiceren welke *API-implementaties* voldoen, biedt dat API deployers inzicht in het te vertrouwen aanbod
+  op de softwaremarkt en stimuleert dat een competitieve softwaremarkt tot aanbod van meer goede-API-implementaties.
+  Daarnaast stimuleert die duidelijkheid kennisdeling tussen API developers en biedt dat API specifiers inzicht in de
+  implementeerbaarheid van hun specificaties.
+3. Door te communiceren welke *API (server) deployments* voldoen aan zekere API-eisen, krijgen API client deployers de
+  mogelijkheid met deze API (server) deployers een API-overeenkomst aan te gaan en zo een nieuwe uitwisseling te
+  realiseren.
+4. Door helderheid over welke *API-overeenkomsten* voldoen aan de API-eisen, biedt dat API deployers de gelegenheid zich
+  aan te sluiten bij zo'n overeenkomst (voor zover de desbetreffende API agreement holder daarvoor openstaat).
+
+Daarvoor ontwikkelt en onderhoudt de API-strategie een publiek ontsloten *API-bibliotheek*. De API-bibliotheek biedt aan
+de API-strategie zelf voortdurend overzicht over de huidige situatie en haar eigen effectiviteit.
+
+Om de inhoud van de API-bibliotheek te beheren is het nodig de verschillende verschijningsvormen van API's (zoals
+API-specificaties en API-implementaties) te toetsen op hun voldoen aan API-eisen. Hoe dat moet plaatsvinden valt nog te
+bepalen (onafhankelijke toetsing; zelfverklaring; anderszins).
