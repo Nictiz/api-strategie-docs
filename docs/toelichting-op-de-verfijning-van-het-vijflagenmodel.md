@@ -5,6 +5,10 @@ Met zijn vijf niveaus roept het model in afbeelding 1 de vraag op hoe het zich v
 overeenkomsten en geen tegenstrijdigheden. Afbeelding 1 is op meer manieren een wezenlijke verfijning van het Nictiz
 lagen-model.
 
+![Lagenmodel van Nictiz.](./assets/images/lagenmodel-van-nictiz.png)
+
+*Afbeelding 9: Lagenmodel van Nictiz.*
+
 Ten eerste wordt het niet omringd gedacht door organisatie- of systeem-grenzen. Het is niet een gelaagd model van
 organisaties of systemen, maar een model dat op alle schalen van toepassing is, en gebruikt wil worden als achtergrond
 waartegen *elke* specificatie in het zorginformatiestelsel zijn plek krijgt, of het nu op Europese schaal is, of op de
