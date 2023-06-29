@@ -70,6 +70,10 @@ Toch is de grote rol van API's op deze punten uiteindelijk niet leidend maar die
 zorginformatiestelsel, op hogere niveaus (afbeelding 1)[^3]. Technologie kan de rol van die hogere niveaus onmogelijk
 overnemen. Technologie kan wél de noodzaak van die andere deelstrategieën duidelijker maken.
 
+![Positie van API's in het zorginformatiestelsel.](./assets/images/positie-van-apis-in-het-zorginformatiestelsel.png)
+
+*Afbeelding 1: Positie van API's in het zorginformatiestelsel.*
+
 Een zorginformatiestelsel dat inzet op passende en hybride zorg moet de kracht van API's inzetten op het juiste niveau.
 
 Digitale technologie is en blijft een middel voor informatiegebruiksdoelen. Toch kunnen API's een krachtige en welkome
@@ -201,6 +205,10 @@ een API deployer om aan te sluiten bij een grote collectieve overeenkomst (strat
 Om de API-specificaties binnen één API-overeenkomst samen de belangen van de deployers te laten dienen, en om
 API-specificaties te standaardiseren voor hergebruik in meerdere API-overeenkomsten, is architectuurbeleid nodig. In
 [hoofdstuk 2](./api-architectuur.md) van dit document worden daarvoor de fundamenten gelegd (afbeelding 1).
+
+![Positie van API's in het zorginformatiestelsel.](./assets/images/positie-van-apis-in-het-zorginformatiestelsel.png)
+
+*Afbeelding 4: Positie van API's in het zorginformatiestelsel.*
 
 ### Kwalificatiebeleid
 
