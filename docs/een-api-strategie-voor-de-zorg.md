@@ -127,6 +127,10 @@ eisen aan API's. Hier kunnen API's groeien in interoperabiliteit en implementeer
 hogere niveaus (het logische niveau, het taal- en het organisatieniveau). Die afhankelijkheid bestaat wel op de derde en
 hoogste trede (afbeelding 2).
 
+![Groeipad binnen de API-strategie.](./assets/images/groeipad-binnen-de-api-strategie.png)
+
+*Afbeelding 2: Groeipad binnen de API-strategie.*
+
 Het doel van de API-strategie is om veel API's te verwelkomen op de eerste trede van het groeipad en deze te stimuleren
 in hun groei naar hogere treden. Vanzelfsprekend kunnen API's ook onmiddellijk instappen op hogere treden, wanneer zij
 aan desbetreffende eisen voldoen.
@@ -191,6 +195,10 @@ De API-overeenkomst − in welke variant dan ook − verwijst naar de API-specif
 API-specificaties voorkomen. Een API-specificatie kan worden uitgewerkt in verschillende API-implementaties en er kunnen
 meer partijen verantwoordelijk zijn voor het dagelijks gebruik van software waarin de API's zijn ingebouwd (meer API
 deployers voor een API-implementatie).
+
+![API-speelveld.](./assets/images/api-speelveld.png)
+
+*Afbeelding 3: API-speelveld.*
 
 ### Belangenbeleid
 
